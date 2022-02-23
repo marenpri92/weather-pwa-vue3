@@ -9,6 +9,7 @@
     "resolveJsonModule": true,
     "esModuleInterop": true,
     "useDefineForClassFields": true,
+    "skipLibCheck": true,
     "baseUrl": ".",
     "paths": {
       "/@/*": ["src/*"]

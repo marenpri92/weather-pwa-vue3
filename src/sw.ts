@@ -11,7 +11,8 @@ import { CacheableResponsePlugin } from 'workbox-cacheable-response';
 // Used to limit entries in cache, remove entries after a certain period of time
 import { ExpirationPlugin } from 'workbox-expiration';
 
-declare let self: ServiceWorkerGlobalScope
+declare let self: ServiceWorkerGlobalScope;
+
 self.addEventListener('message', (event) => {
   if (event.data && event.data.type === 'SKIP_WAITING') self.skipWaiting();
 })
