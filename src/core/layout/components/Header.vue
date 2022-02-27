@@ -1,5 +1,4 @@
 <template>
-    <header>
-        <h1>PWA Weather App</h1>
-    </header>
+    <img src="src/assets/logo.png" alt="Logo" />
+    <h1>PWA Weather App</h1>
 </template>
