@@ -1,6 +1,7 @@
 import { createApp } from 'vue';
-import App from './App.vue';
 import { createRouter, createWebHashHistory } from 'vue-router';
+
+import App from './App.vue';
 import routes from './core/routes';
 
 
@@ -14,4 +15,6 @@ if (typeof window !== 'undefined') {
   import('./sw-register')
 }
 
-createApp(App).use(router).mount('#app');
+createApp(App)
+.use(router)
+.mount('#app');

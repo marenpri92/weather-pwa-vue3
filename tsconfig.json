@@ -15,7 +15,9 @@
       "/@/*": ["src/*"]
     },
     "lib": ["ESNext", "DOM", "WebWorker"],
-    "types": ["vite-plugin-pwa/client"] //Needed to avoid ts type error with 'virtual:pwa-register'
+    "types": [
+      "vite-plugin-pwa/client", //Needed to avoid ts type error with 'virtual:pwa-register'
+      ] 
   },
   "include": [
     "src/**/*.ts",
