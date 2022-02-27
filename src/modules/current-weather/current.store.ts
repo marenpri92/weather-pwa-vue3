@@ -6,7 +6,7 @@ import { currentWeather } from './interfaces/current-weather.interface';
 
 export const weatherData = ref<currentWeather | null>(null);
 export const fetchedData = ref<Date | null>(null);
-export const imageByWeather = ref<String>('');
+export const imageByWeather = ref("");
 
 export const action = reactive({
   getWeather: async () => {
