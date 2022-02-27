@@ -11,7 +11,7 @@ export default defineConfig({
       srcDir: "src",
       filename: "sw.ts",
       strategies: "injectManifest",
-      includeAssets: ['favicon.svg', 'favicon.ico', 'robots.txt', 'apple-touch-icon.png'],
+      includeAssets: ['favicon.svg', 'favicon.ico', 'apple-touch-icon.png'],
       registerType: 'autoUpdate',
       manifest: {
         name: 'Weather from every where!',
