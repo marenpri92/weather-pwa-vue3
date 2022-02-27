@@ -15,7 +15,9 @@ export const action = reactive({
         const weather: currentWeather = await getCurrentWeather(`lat=${coords.latitude}&lon=${coords.longitude}`);
         fetchedData.value = new Date();
         weatherData.value = weather;
-        imageByWeather.value = `${import.meta.env.VITE_API_ICON}/${weatherData.value?.weather[0]?.icon}@2x.png`;
+        const imgUrl = `${import.meta.env.VITE_API_ICON}/${weatherData.value?.weather[0]?.icon}@2x.png`;
+        
+        imageByWeather.value = imgUrl;
     }
   }
 });
