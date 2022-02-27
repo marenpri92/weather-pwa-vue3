@@ -11,7 +11,7 @@ export const getCurrentWeather = async (query: string) => {
     } catch (error) {
         throw (error);
     }
-}
+};
 
 export const getForecastWeather = async (query: string) => {
     try {

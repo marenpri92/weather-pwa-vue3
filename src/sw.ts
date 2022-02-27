@@ -78,3 +78,18 @@ registerRoute(
     ],
   }),
 );
+
+registerRoute(
+  ({url}) => url.origin === 'https://api.openweathermap.org',
+  new CacheFirst({
+    cacheName: 'api',
+    plugins: [
+      new CacheableResponsePlugin({
+        statuses: [0, 200]
+      }),
+      new ExpirationPlugin({
+        maxAgeSeconds: 60 * 60 * 24,
+      }),
+    ],
+  })
+);

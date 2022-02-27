@@ -1,3 +1,8 @@
+export interface shortGeolocation {
+    latitude: number,
+    longitude: number
+}
+
 export interface currentWeather {
     coord: Coordinates,
     weather: Weather[],

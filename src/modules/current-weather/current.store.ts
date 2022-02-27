@@ -5,7 +5,8 @@ import geolocalization from '../../core/tools/geolocalization';
 import { currentWeather } from './interfaces/current-weather.interface';
 
 export const weatherData = ref<currentWeather | null>(null);
-export const fetchedData = ref<Date>();
+export const fetchedData = ref<Date | null>(null);
+export const imageByWeather = ref("");
 
 export const action = reactive({
   getWeather: async () => {
@@ -14,6 +15,9 @@ export const action = reactive({
         const weather: currentWeather = await getCurrentWeather(`lat=${coords.latitude}&lon=${coords.longitude}`);
         fetchedData.value = new Date();
         weatherData.value = weather;
+        const imgUrl = `${import.meta.env.VITE_API_ICON}/${weatherData.value?.weather[0]?.icon}@2x.png`;
+        
+        imageByWeather.value = imgUrl;
     }
   }
 });
