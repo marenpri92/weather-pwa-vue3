@@ -5,11 +5,16 @@ import { weatherActions } from '../../modules/current-weather/current.store';
 
 export const appActions = reactive({
     getGeolocalization: async () => {
-        const { coords } = await geolocalization();
-        window.localStorage.setItem('geoCoords', JSON.stringify({
-            latitude: coords.latitude,
-            longitude: coords.longitude
-        }));
-        weatherActions.getWeather();
+        try {
+            const { coords } = await geolocalization();
+            window.localStorage.setItem('geoCoords', JSON.stringify({
+                latitude: coords.latitude,
+                longitude: coords.longitude
+            }));
+            weatherActions.getWeather();
+        } catch (error) {
+            console.log('error in action', error)
+        }
+        
     }
 });
