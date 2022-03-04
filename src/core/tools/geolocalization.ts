@@ -3,7 +3,7 @@ export default (): Promise<GeolocationPosition>  => {
         if (navigator.geolocation) {
             navigator.geolocation.getCurrentPosition(resolve, reject);
         } else {
-            reject();
+            reject((response: GeolocationPositionError) => document.body.innerHTML = response.message);
         }
     });
 }
