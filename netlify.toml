@@ -4,6 +4,6 @@
     access-control-allow-origin = "*"
     X-Content-Type-Options = "nosniff"
     Referrer-Policy = "strict-origin-when-cross-origin"
-    Permissions-Policy = "geolocation=('self')"
+    Permissions-Policy = "geolocation=()"
     X-Frame-Options = "SAMEORIGIN"
     Content-Security-Policy = script-src 'self'
