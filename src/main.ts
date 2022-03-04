@@ -3,6 +3,7 @@ import { createRouter, createWebHashHistory } from 'vue-router';
 
 import App from './App.vue';
 import routes from './core/routes';
+import './styles/index.css';
 
 
 const router = createRouter({
