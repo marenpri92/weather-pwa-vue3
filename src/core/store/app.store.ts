@@ -14,7 +14,7 @@ export const appActions = reactive({
             weatherActions.getWeather();
         } catch (error: GeolocationPositionError | any) {
             console.log('error in action', error);
-            document.body.innerHTML = error.message
+            window.alert(error.message);
         }
         
     }
