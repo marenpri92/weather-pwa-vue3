@@ -9,7 +9,7 @@ onMounted(() => {
 
 <template>
   <div v-if="weatherData">
-    <h2>{{weatherData.name}}:</h2> {{new Date()}}
+    <h2 class="text-3xl font-bold underline">{{weatherData.name}}:</h2> {{new Date()}}
     <h2>Current weather: {{ weatherData.main.temp }} -> <span>feels like: {{weatherData.main.feels_like}}</span></h2>
     <h3>Min: {{ weatherData.main.temp_min }} - Max: {{ weatherData.main.temp_max }}</h3>
     <h3>{{weatherData.weather[0].main}} -> <span>{{weatherData.weather[0].description}}</span></h3>
