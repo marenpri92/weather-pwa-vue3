@@ -12,8 +12,9 @@ export const appActions = reactive({
                 longitude: coords.longitude
             }));
             weatherActions.getWeather();
-        } catch (error) {
-            console.log('error in action', error)
+        } catch (error: GeolocationPositionError | any) {
+            console.log('error in action', error);
+            document.body.innerHTML = error.message
         }
         
     }
