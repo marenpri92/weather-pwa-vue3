@@ -8,7 +8,7 @@ prompt(): Promise<void>;
 
 }
 
-//necesary to accept the prompt()
+//necesary to accept the prompt() function
 interface ServiceWorkerGlobalScopeEventMap { 
     "beforeinstallprompt": BeforeInstallPromptEvent; 
 }

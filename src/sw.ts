@@ -13,9 +13,7 @@ import { ExpirationPlugin } from 'workbox-expiration';
 
 declare let self: ServiceWorkerGlobalScope;
 
-self.addEventListener('message', (event) => {
-  if (event.data && event.data.type === 'SKIP_WAITING') self.skipWaiting();
-})
+self.skipWaiting();
 
 self.addEventListener("beforeinstallprompt", function(e) {
   console.log('beforeinstallprompt event', e); // e.g., ["web", "android", "windows"]
