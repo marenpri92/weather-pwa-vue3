@@ -1,3 +1,5 @@
 <template>
-    <p>PWA Weather App 2022</p>
+    <div class="flex h-10 justify-center px-4 py-2 bg-slate-300 rounded-b-3xl">
+        <p>PWA Weather App 2022</p>
+    </div>
 </template>

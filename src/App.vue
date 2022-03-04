@@ -3,7 +3,9 @@ import Layout from './core/layout/Layout.vue';
 </script>
 
 <template>
-  <Layout />
+  <div class="container mx-auto w-full sm:w-3/4 md:w-2/4 rounded-3xl shadow-2xl mt-0">
+    <Layout />
+  </div>
 </template>
 
 <style>
