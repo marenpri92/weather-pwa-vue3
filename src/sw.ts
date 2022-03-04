@@ -17,6 +17,11 @@ self.addEventListener('message', (event) => {
   if (event.data && event.data.type === 'SKIP_WAITING') self.skipWaiting();
 })
 
+self.addEventListener("beforeinstallprompt", function(e) {
+  console.log('beforeinstallprompt event', e); // e.g., ["web", "android", "windows"]
+  e.prompt();
+});
+
 // self.__WB_MANIFEST is default injection point
 precacheAndRoute(self.__WB_MANIFEST);
 
