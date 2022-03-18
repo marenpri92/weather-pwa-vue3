@@ -1,5 +1,9 @@
+<script setup lang="ts">
+    import { currentDate } from "../../tools/formatDate";
+</script>
+
 <template>
-    <div class="flex h-10 justify-center px-4 py-2 bg-slate-300">
-        <p>PWA Weather App 2022</p>
+    <div class="flex justify-center p-4 bg-slate-300">
+        <p class="text-stone-800">PWA Weather App: {{currentDate()}}</p>
     </div>
 </template>

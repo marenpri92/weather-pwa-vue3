@@ -1,0 +1,1 @@
+export default (temp: Number) => `${temp.toFixed()}`;

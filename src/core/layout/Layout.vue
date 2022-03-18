@@ -7,7 +7,7 @@ import Footer from './components/Footer.vue';
     <div class="h-full flex flex-col justify-between">
         <Header />
             <div class="container mx-auto w-full align-center sm:w-3/4 md:w-2/4 rounded-3xl shadow-2xl mt-0">
-                <div class="p-4 h-96">
+                <div class="h-96">
                     <router-view></router-view>
                 </div>
             </div>

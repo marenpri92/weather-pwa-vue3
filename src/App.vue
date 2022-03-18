@@ -3,7 +3,7 @@ import Layout from './core/layout/Layout.vue';
 </script>
 
 <template>
-  <div class="h-full">
+  <div class="h-full font-sans">
     <Layout />
   </div>
 </template>
