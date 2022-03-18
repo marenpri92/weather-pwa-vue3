@@ -7,11 +7,11 @@ PWA app that allows you see the weather by location using this [Weather api](htt
 ### Set your env variables:
  1- Create .env file in the root of the project and copi the content from env.example:
 ```
-VUE_APP_API=api url
-VUE_APP_API_KEY=weather api key
-VUE_APP_API_ICON=api for icons
+VITE_BASE_URL=https://api.openweathermap.org/data/2.5
+VITE_API_KEY=api key
+VITE_API_ICON=https://openweathermap.org/img/wn
 ```
- 2- Login in [Weather api](https://openweathermap.org/api) to get your own api key and then replace the texts for the real data.
+ 2- Login in [Weather api](https://openweathermap.org/api) to get your own "api key" and then replace the texts for the real data.
  
  ### Install the dependencies:
  ```
