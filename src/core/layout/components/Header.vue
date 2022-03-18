@@ -3,7 +3,7 @@ import { appActions } from '../../store/app.store';
 </script>
 
 <template>
-    <div class="flex h-16 content-center justify-between px-4 py-2 bg-slate-300 rounded-t-3xl">
+    <div class="flex h-16 content-center justify-between px-4 py-2 bg-slate-300">
         <div class="flex">
             <img class="h-14 w-14" src="../../../assets/logo.png" alt="Logo" />
             <h1 class="self-center font-semibold text-lg">PWA Weather App</h1>
